@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   font-family: Century, Arial, Helvetica, sans-serif;
+   height: 100vh;
+   width: 100vw;
+   margin: 0px;
+   padding: 0px;
+   overflow: hidden;
+   font-size: 15px;
+   /* Hide scrollbars */
+}
+
+
+.logo {
+   /* max-width: fit-content; */
+   margin-inline: auto;
+   margin-top: 1rem;
+}
+
+.navbar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.navbar-Text {
+   font-size: 12px;
+   height: 100%;
+   margin-top: 5px;
+   justify-content: center;
+   align-content: center;
+
+}
+
+.navbar-left {
+   margin-left: 2.5vw;
+}
+
+.navbar-right {
+   margin-right: 2.5vw;
+}
+
+.homepage-table {
+   font-size: 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   margin-top: auto;
+   padding-bottom: 1rem;
+   margin-right: 2rem;
+
+}
+
+.homepage-cell {
+   display: flex;
+   text-align: center;
+   align-content: space-between;
+   width: 100%;
+   cursor: pointer;
+}
+
+.homepage-left {
+   text-align: left;
+}
+
+.homepage-right {
+   margin-left: auto;
+   text-align: right;
+}
+
+/* Group 19 */
+
+
+.slideshow {
+   width: 774px;
+   height: 882px;
+   margin: 2rem;
+}
+
+.slideCarousel {
+   /* margin-top: 25%; */
+}
