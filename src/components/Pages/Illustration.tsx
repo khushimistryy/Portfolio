@@ -33,9 +33,10 @@ const Illustration = () => {
    const containerref = createRef()
    const [containerHeight, setcontainerHeight] = useState()
    function setContainerHeight() {
-      {/* 
-// @ts-ignore */}
+
       setTimeout(() => {
+         {/* 
+// @ts-ignore */}
          setcontainerHeight(containerref.current.offsetHeight)
       }, 5);
    }
@@ -67,6 +68,8 @@ const Illustration = () => {
          <div className="flex flex-col  h-screen">
             <Header></Header>
             <div className='w-screen h-full flex' >
+               {/* 
+// @ts-ignore */}
                <div className=' flex-col content-end ' ref={containerref} onLoad={setContainerHeight} style={{ textAlign: "center", marginLeft: "2.5vw", marginRight: "2rem" }}>
                   <Slideshow>{/* 
 // @ts-ignore */}

@@ -61,6 +61,8 @@ const Home = () => {
          <div className="flex flex-col  h-screen">
             <Header></Header>
             <div className="flex  h-full w-full">
+               {/* 
+// @ts-ignore */}
                <div id="slidesho-container" ref={imgref} className='flex flex-col-reverse  h-full pl-[2.5vw]'>
 
                   {/* <Slideshow  ></Slideshow> */}
@@ -68,6 +70,7 @@ const Home = () => {
                      <Slideshow1 ref={slideshowRef as React.RefObject<HTMLDivElement>}  >
                         {imgs.map((img, index) => {
                            return (
+                              // @ts-ignore 
                               <img src={img} key={index} className='' style={{ height: `${refHeight * 0.95}px`, maxWidth: "none", marginTop: 'auto' }} alt="" />
                            )
                         })}
